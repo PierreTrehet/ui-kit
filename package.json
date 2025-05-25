@@ -25,7 +25,7 @@
     "build": "tsc && vite build",
     "build:clean": "rm -rf node_modules && rm -f yarn.lock && yarn install && yarn build",
     "showcase": "tsc && vite build --mode=showcase",
-    "deploy": "gh-pages -d showcase-dist"
+    "deploy": "yarn showcase && gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
