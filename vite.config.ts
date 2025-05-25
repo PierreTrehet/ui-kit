@@ -17,7 +17,7 @@ export default defineConfig(({ command, mode }) => {
   if (mode === "showcase") {
     console.warn("This is showcase")
     return {
-      base: "",
+      base: "/ui-kit/",
       plugins: [react()]
     }
   }
