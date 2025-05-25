@@ -1,4 +1,5 @@
 {
+  "homepage": "https://PierreTrehet.github.io/ui-kit",
   "name": "@reef-chain/ui-kit",
   "version": "4.0.0",
   "private": false,
@@ -24,7 +25,7 @@
     "build": "tsc && vite build",
     "build:clean": "rm -rf node_modules && rm -f yarn.lock && yarn install && yarn build",
     "showcase": "tsc && vite build --mode=showcase",
-    "deploy": "yarn showcase && gh-pages -d dist"
+    "deploy": "gh-pages -d showcase-dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
