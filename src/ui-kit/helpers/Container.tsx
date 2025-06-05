@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 
 class Container {
   id: string
-  root: HTMLElement
+  root: HTMLElement | null
 
   constructor (id: string) {
     this.id = id
