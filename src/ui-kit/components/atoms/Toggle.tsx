@@ -22,7 +22,7 @@ const Toggle = ({
   onInput,
   onClick,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const changeValue = (event: React.MouseEvent) => {
     if (disabled) return
 

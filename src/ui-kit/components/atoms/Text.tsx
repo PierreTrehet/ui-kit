@@ -10,7 +10,7 @@ const Text = ({
   type,
   className,
   children
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-text

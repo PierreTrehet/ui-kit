@@ -15,7 +15,7 @@ const Table = ({
   seamless,
   height,
   pagination
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const getHeight = () => {
     if (height) return { maxHeight: `${height}px` }
     return {}

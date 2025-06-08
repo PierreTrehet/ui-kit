@@ -12,7 +12,7 @@ const Th = ({
   children,
   width,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const getWidth = () => {
     if (width) return { width: `${width}px` }
     return {}

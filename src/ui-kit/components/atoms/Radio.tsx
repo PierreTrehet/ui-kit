@@ -14,7 +14,7 @@ const Radio = ({
   onClick,
   onSelect,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const select = (event: React.MouseEvent) => {
     if (disabled) return
 

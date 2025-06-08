@@ -4,7 +4,7 @@ export interface PropsIcon {
   className?: string;
 }
 
-export const WalletConnectLogo = ({ className }: PropsIcon): JSX.Element => (
+export const WalletConnectLogo = ({ className }: PropsIcon): React.JSX.Element => (
   <svg
     className={`wc-icon ${className || ""}`}
     xmlns="http://www.w3.org/2000/svg"

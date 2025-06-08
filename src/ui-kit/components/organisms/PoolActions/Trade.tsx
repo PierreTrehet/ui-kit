@@ -26,7 +26,7 @@ const SummaryItem = ({
   value?: string,
   empty?: boolean,
   className?: string
-}): JSX.Element => (
+}): React.JSX.Element => (
   <div
     className={`
       uik-pool-actions__summary-item
@@ -44,7 +44,7 @@ const Trade = ({
   onInput,
   onConfirm,
   onSwitchTokens
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [values, setValues] = useState({
     percentage: 0,
     firstToken: 0,

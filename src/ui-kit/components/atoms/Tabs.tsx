@@ -18,7 +18,7 @@ const Tabs = ({
   options,
   onChange,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const select = (tab?: Value) => {
     if (onChange && value !== tab) onChange(tab)
   }

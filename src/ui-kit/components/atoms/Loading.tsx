@@ -10,7 +10,7 @@ const Loading = ({
   size,
   text,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-loading

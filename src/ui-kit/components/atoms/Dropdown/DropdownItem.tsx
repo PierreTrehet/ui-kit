@@ -16,7 +16,7 @@ const DropdownItem = ({
   isDarkMode,
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <button
     className={`
       uik-dropdown__item

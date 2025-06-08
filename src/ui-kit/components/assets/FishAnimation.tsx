@@ -2,7 +2,7 @@ export interface Props {
   className?: string
 }
 
-const FishAnimation = ({ className }: Props): JSX.Element => (
+const FishAnimation = ({ className }: Props): React.JSX.Element => (
   <div className='fish-animation'>
     <svg
       className={`fish-animation__fish ${className || ''}`}

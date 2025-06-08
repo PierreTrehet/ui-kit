@@ -38,7 +38,7 @@ const Button = ({
   type,
   className,
   children
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <button
         className={`
       uik-button

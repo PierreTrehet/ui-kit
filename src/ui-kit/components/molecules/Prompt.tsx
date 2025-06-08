@@ -21,7 +21,7 @@ const Prompt = ({
   message,
   actions,
   onClose
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [isOpen, setOpen] = useState(false)
   
   const icons = {

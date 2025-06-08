@@ -14,7 +14,7 @@ const Code = ({
   children,
   lang,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const content = code || children
   
   return (

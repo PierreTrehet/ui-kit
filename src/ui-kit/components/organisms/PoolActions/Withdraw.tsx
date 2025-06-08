@@ -17,7 +17,7 @@ const Withdraw = ({
   onInput,
   onConfirm,
   calcValues = () => {}
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [percentage, setPercentage] = useState(50)
 
   const handleSlide = (value: number) => {

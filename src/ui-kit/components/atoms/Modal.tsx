@@ -23,7 +23,7 @@ const Modal = ({
   children,
   footer,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const modal = useRef(null)
   const overlay = useRef(null)
 

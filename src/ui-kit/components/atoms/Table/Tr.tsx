@@ -8,7 +8,7 @@ const Tr = ({
   onClick,
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <tr
     className={`
       uik-table-row

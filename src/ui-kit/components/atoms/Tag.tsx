@@ -10,7 +10,7 @@ const Tag = ({
   color,
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-tag

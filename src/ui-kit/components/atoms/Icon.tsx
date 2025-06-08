@@ -8,7 +8,7 @@ export interface Props {
 const Icon = ({
   icon,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <FontAwesomeIcon
     className={`uik-icon ${className || ''}`}
     icon={icon}

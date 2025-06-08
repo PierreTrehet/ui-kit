@@ -11,7 +11,7 @@ const Amount = ({
   value,
   className,
   children
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   return (
     <div
       className={`

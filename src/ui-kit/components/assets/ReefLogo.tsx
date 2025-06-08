@@ -2,7 +2,7 @@ export interface Props {
   className?: string
 }
 
-const ReefLogo = ({ className }: Props): JSX.Element => (
+const ReefLogo = ({ className }: Props): React.JSX.Element => (
   <svg
     className={`reef-logo ${className || ''}`}
     version="1.1"

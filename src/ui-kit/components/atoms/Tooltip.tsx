@@ -12,7 +12,7 @@ const Card = ({
   children,
   delay,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
   className={`
       uik-tooltip
