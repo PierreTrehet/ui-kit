@@ -31,6 +31,15 @@ without `yarn install` will produce an error saying it cannot find the
 yarn showcase
 ```
 
+## Yarn 4 and ESM
+
+Starting from this release the project uses native ESM modules. The
+`package.json` includes `"type": "module"` and the Vite configuration is
+exported with `export default`. After checking out the repository make sure to
+run `yarn install` before any other command. Previous runs could fail during the
+link step when the deprecated `vite-plugin-checker` was present. The plugin has
+been removed and `yarn install` should now complete without errors.
+
 ## Versioning
 
 Push to master will trigger deploy as well as publish to npm registry. A new tag will be created with the version. See [here](https://github.com/mikeal/merge-release#workflow) for special commit messages that trigger version changes.
