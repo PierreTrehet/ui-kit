@@ -21,6 +21,9 @@ yarn dev
 ```
 yarn build
 ```
+Ensure that dependencies are installed before building. Running `yarn build`
+without `yarn install` will produce an error saying it cannot find the
+`node_modules` state file.
 
 ## Build showcase page
 
