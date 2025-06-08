@@ -1,17 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
-import eslint from 'vite-plugin-eslint'
+import checker from 'vite-plugin-checker'
 import * as path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
   if (command !== "build") {
     return {
-      plugins: [react(), eslint()]
+      plugins: [
+        react(),
+        checker({ typescript: true }) // ✅ plus de ESLint ici
+      ]
     }
   }
 
