@@ -12,7 +12,7 @@ const Bubbles = ({
   amount,
   delay,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-bubbles
@@ -21,7 +21,7 @@ const Bubbles = ({
   >
     {
       (() => {
-        let output:Array<JSX.Element> = []
+        let output:Array<React.JSX.Element> = []
 
         for (let i = 0; i < (amount || 20); i++) {
           output.push(

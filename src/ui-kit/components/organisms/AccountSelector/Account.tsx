@@ -41,7 +41,7 @@ const Account = ({
   onExport,
   onForget,
   className,
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [isOptionsDropdownOpen, setOptionsDropdown] = useState(false);
   const [isExportDropdownOpen, setExportDropdown] = useState(false);
   const [newName, setNewName] = useState(name);

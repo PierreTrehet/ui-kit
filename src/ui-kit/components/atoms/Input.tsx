@@ -55,7 +55,7 @@ const Input = ({
   onKeyPress,
   onKeyDown,
   onKeyUp
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   
   const InputTag = textarea ? 'textarea' : 'input'
 

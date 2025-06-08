@@ -35,7 +35,7 @@ export type Extension = {
   selected: boolean;
   installed: boolean;
   isSnap?: boolean;
-  icon?: JSX.Element;
+  icon?: React.JSX.Element;
   chromeExtensionLink?: string;
   firefoxExtensionLink?: string;
 };
@@ -110,7 +110,7 @@ function AccountSelector({
   onConfirmAccountCreation,
   handleWalletConnect,
   className,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   const wrapper = useRef(null);
 
   const isSelected = (account: Account): boolean => {

@@ -14,7 +14,7 @@ export interface Props {
   onClose?: (...args: any[]) => any
 }
 
-const Notifications = ({ notifications, onClose }: Props): JSX.Element => {
+const Notifications = ({ notifications, onClose }: Props): React.JSX.Element => {
   const closeNotification = (id: number) => {
     if (onClose) {
       onClose(id)

@@ -8,7 +8,7 @@ const Label = ({
   text,
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <label
     className={`
       uik-label

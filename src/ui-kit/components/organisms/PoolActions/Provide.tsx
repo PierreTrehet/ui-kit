@@ -20,7 +20,7 @@ const Provide = ({
   onInput,
   onConfirm,
   calcValues = () => {}
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const defaultValues = {
     firstToken: 0,
     secondToken: 0,

@@ -1,11 +1,13 @@
-import ReactDOM from 'react-dom';
+import { createRoot, type Root } from 'react-dom/client';
 
 class Container {
   id: string
-  root: HTMLElement | null
+  rootEl: HTMLElement | null
+  root: Root | null
 
   constructor (id: string) {
     this.id = id
+    this.rootEl = null
     this.root = null
   }
 
@@ -15,25 +17,28 @@ class Container {
 
   create = () => {
     let el = this.getElement()
-    
+
     if (!el) {
       el = document.createElement("div")
       el.id = this.id
       document.body.appendChild(el)
     }
 
-    this.root = el
+    this.rootEl = el
+    this.root = createRoot(el)
   }
 
-  render = (children) => {
+  render = (children: React.ReactNode) => {
     if (!this.root) this.create()
-    if (this.root) ReactDOM.render(children, this.root)
+    this.root!.render(children)
   }
 
   destroy = () => {
-    if (!this.root) return
-    this.root.remove()
+    if (!this.root || !this.rootEl) return
+    this.root.unmount()
+    this.rootEl.remove()
     this.root = null
+    this.rootEl = null
   }
 }
 

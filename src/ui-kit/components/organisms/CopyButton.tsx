@@ -21,7 +21,7 @@ const CopyButton = ({
   notification,
   onClick,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   
   const showNotification = () => {
     let type = "info" 

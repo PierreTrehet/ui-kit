@@ -10,7 +10,7 @@ export interface Props {
 const Title = ({
   text,
   code
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (

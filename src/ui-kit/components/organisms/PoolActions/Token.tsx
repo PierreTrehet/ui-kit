@@ -21,7 +21,7 @@ const TokenComponent = ({
   onInput,
   onBlur,
   inputRef
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [ isFocused, setFocused ] = useState(false)
 
   const onInputFocus = () => setFocused(true)

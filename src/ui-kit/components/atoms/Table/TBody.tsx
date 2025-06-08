@@ -6,7 +6,7 @@ export interface Props {
 const TBody = ({
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <tbody
     className={`
       uik-table-body

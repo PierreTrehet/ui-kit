@@ -45,7 +45,7 @@ const Select = ({
   // onOpen,
   // onClose,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [ isOpen, setOpen ] = useState(false)
   
   console.log(isOpen)

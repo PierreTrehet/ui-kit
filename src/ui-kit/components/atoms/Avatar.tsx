@@ -10,7 +10,7 @@ const Avatar = ({
   name,
   size,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   return (
     <div
       className={`

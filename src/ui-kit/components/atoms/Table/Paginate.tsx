@@ -16,7 +16,7 @@ const Paginate = ({
   count,
   onChange,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const getPages = () => {
     if (count === 2) return [1, 2]
     

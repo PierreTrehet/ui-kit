@@ -10,7 +10,7 @@ const Container = ({
   className,
   children,
   flow
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-container

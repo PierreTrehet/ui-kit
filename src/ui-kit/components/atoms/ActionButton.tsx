@@ -19,7 +19,7 @@ const ActionButton = ({
   url,
   children,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const ButtonTag = !!url ? "a" : "button"
 
   const getIcon = () => {

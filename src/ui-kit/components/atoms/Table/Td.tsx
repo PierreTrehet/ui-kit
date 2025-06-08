@@ -8,7 +8,7 @@ const Td = ({
   align,
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <td
     className={`
       uik-table-cell

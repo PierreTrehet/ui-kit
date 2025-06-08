@@ -25,7 +25,7 @@ const Slider = ({
   disabled,
   className,
   onChange
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [dragging, setDragging] = useState(false)
   const sliderEl = useRef(null)
 

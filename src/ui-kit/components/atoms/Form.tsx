@@ -6,7 +6,7 @@ export interface Props {
 const Form = ({
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <form
     className={`
       uik-form

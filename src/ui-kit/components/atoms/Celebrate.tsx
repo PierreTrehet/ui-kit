@@ -14,7 +14,7 @@ const Celebrate = ({
   className,
   type,
   onDestroy
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [destroy, setDestroy] = useState(false)
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Celebrate = ({
     return () => {}
   }, []);
 
-  const Particle = ({ index }): JSX.Element => {
+  const Particle = ({ index }): React.JSX.Element => {
     if (type === "money") {
       return (
         <Icon
@@ -60,7 +60,7 @@ const Celebrate = ({
     >
       {
         (() => {
-          let output:Array<JSX.Element> = []
+          let output:Array<React.JSX.Element> = []
 
           for (let i = 0; i < 150; i++) {
             output.push(

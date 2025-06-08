@@ -28,7 +28,7 @@ const Alert = ({
   aliveFor,
   className,
   children
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [ closing, setClosing ] = useState(false)
 
 

@@ -19,7 +19,7 @@ const Dropdown = ({
   position,
   children,
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const dropdown = useRef(null)
 
   const getChildClick = (child: any) => {

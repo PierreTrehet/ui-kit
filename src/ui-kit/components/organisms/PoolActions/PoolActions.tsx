@@ -60,7 +60,7 @@ const PoolActions = ({
   data,
   tab = "Trade",
   className
-}: Props): JSX.Element => {
+}: Props): React.JSX.Element => {
   const [ currentTab, setTab ] = useState(tab)
 
   const selectTab = (value: "Provide" | "Withdraw" | "Trade") => {

@@ -8,7 +8,7 @@ export interface Props {
 const QRCode = ({
   value,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <div
     className={`
       uik-qr-code

@@ -1,6 +1,6 @@
 import { Props } from './ReefLogo';
 
-const ReefTestnetLogo = ({ className }: Props): JSX.Element => (
+const ReefTestnetLogo = ({ className }: Props): React.JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"

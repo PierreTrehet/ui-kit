@@ -6,7 +6,7 @@ export interface Props {
 const THead = ({
   children,
   className
-}: Props): JSX.Element => (
+}: Props): React.JSX.Element => (
   <thead
     className={`
       uik-table-head
