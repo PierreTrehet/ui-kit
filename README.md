@@ -1,76 +1,123 @@
 # Reef UI Kit
 
-### Reef's UI library of components, assets and helpers
+Reef's UI library of components, assets, and helpers.
 
-Project includes Example view with all components and their usage. It also serves as an isolated development environment.
+The project includes:
+- A development environment for isolated component testing.
+- An example view showcasing all components and their usage.
 
-## Setup
+---
 
+## 🛠️ Setup
+
+```bash
+yarn install
 ```
-yarn
+
+> ⚠️ Make sure you're using **Yarn 4**. If not, run:
+```bash
+corepack enable
+corepack prepare yarn@4.9.2 --activate
 ```
 
-## Development
+---
 
-```
+## 🚀 Development
+
+```bash
 yarn dev
 ```
 
-## Build
+---
 
-```
+## 🏗️ Build
+
+```bash
 yarn build
 ```
-Ensure that dependencies are installed before building. Running `yarn build`
-without `yarn install` will produce an error saying it cannot find the
-`node_modules` state file.
 
-## Build showcase page
+> ℹ️ `yarn build` requires dependencies to be installed first. Run `yarn install` beforehand.
 
-```
+---
+
+## 🌐 Build showcase page
+
+```bash
 yarn showcase
 ```
 
-## Yarn 4 and ESM
+---
 
-Starting from this release the project uses native ESM modules. The
-`package.json` includes `"type": "module"` and the Vite configuration is
-exported with `export default`. After checking out the repository make sure to
-run `yarn install` before any other command. Previous runs could fail during the
-link step when the deprecated `vite-plugin-checker` was present. The plugin has
-been removed and `yarn install` should now complete without errors.
+## 📦 Yarn 4 & Native ESM support
 
-## Versioning
+From this release:
 
-Push to master will trigger deploy as well as publish to npm registry. A new tag will be created with the version. See [here](https://github.com/mikeal/merge-release#workflow) for special commit messages that trigger version changes.
+- The project uses **native ES modules** (`"type": "module"` in `package.json`).
+- `vite.config.ts` is exported via `export default`.
+- The plugin `vite-plugin-checker` is still used for TypeScript checks (ESLint runtime checks are disabled).
+- ESLint 9 support has been added with updated configuration.
 
-
-## Known issues
-
-### Multiple copies of React
-
-While UI Kit has it's own development environment, it can also be used as a local dependency while developing other projects. This situation may result in errors due to UI Kit having it's own copy of React.
-
-To solve this issue:
-
-1. Go to project's React package
-```
-cd node_modules/react
+> After cloning the repository, always run:
+```bash
+yarn install
 ```
 
-2. Create a link
-```
-yarn link
+---
+
+## 🧹 Lint & Formatting
+
+### Run lint checks:
+```bash
+yarn lint
 ```
 
-3. Go to project's UI Kit package
-```
-cd node_modules/@reef-chain/ui-kit
-```
-
-4. Link React
-```
-yarn link react
+### Automatically fix errors:
+```bash
+yarn lint:fix
 ```
 
-These steps might need to be repeated upon managing packages. The issue occurs only in development.
+> The `.eslintignore` file is no longer supported. File exclusions should be defined using the `ignores` property in `eslint.config.js`.
+
+---
+
+## 🧪 React duplication (in local development)
+
+When `@reef-chain/ui-kit` is used as a local dependency in another project, it may cause conflicts due to duplicate copies of React. To fix:
+
+1. In the main project:
+   ```bash
+   cd node_modules/react
+   yarn link
+   ```
+
+2. In the UI Kit folder:
+   ```bash
+   cd node_modules/@reef-chain/ui-kit
+   yarn link react
+   ```
+
+These steps may need to be repeated when managing dependencies.
+
+---
+
+## 🧾 Versioning
+
+A push to the `master` branch will:
+
+- Deploy the showcase site,
+- Publish the package to the npm registry,
+- Tag the commit with the new version.
+
+Refer to the conventional commit message guide to trigger version updates.
+
+---
+
+## ✅ Main Versions
+
+| Tool         | Version         |
+|--------------|-----------------|
+| Node.js      | >= 20.19.0      |
+| Yarn         | 4.9.2           |
+| TypeScript   | ^5.8.3          |
+| ESLint       | ^9.28.0         |
+| Vite         | ^6.3.5          |
