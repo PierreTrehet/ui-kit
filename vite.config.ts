@@ -18,12 +18,17 @@ export default defineConfig(({ command, mode }) => {
   }
 
   if (mode === "showcase") {
-    console.warn("This is showcase")
-    return {
-      base: "/ui-kit/",
-      plugins: [react()]
+  console.warn("This is showcase");
+  return {
+    base: "/ui-kit/",
+    plugins: [react()],
+    build: {
+      rollupOptions: {
+        input: path.resolve(__dirname, "src/index.tsx")
+      }
     }
-  }
+  };
+}
 
   return {
     plugins: [react(), dts()],
