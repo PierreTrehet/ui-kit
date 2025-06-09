@@ -21,11 +21,11 @@ export default defineConfig(({ command, mode }) => {
  if (mode === "showcase") {
   console.warn("This is showcase");
   return {
-    base: "/ui-kit/",
+    base: "/",
     plugins: [react()],
     build: {
       rollupOptions: {
-        input: path.resolve(__dirname, "index.html") // <-- IMPORTANT
+        input: path.resolve(__dirname, "index.html") 
       }
     }
   };
